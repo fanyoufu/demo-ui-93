@@ -1,18 +1,21 @@
 {
-  "name": "deom-ui-93",
-  "version": "0.1.0",
-  "private": true,
+  "name": "demo-ui-93",
+  "version": "0.1.3",
+  "private": false,
+  "main": "dist/mylib.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name mylib ./packages/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.5"
+    "semantic-ui-css": "^2.4.1"
   },
   "devDependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
